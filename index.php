@@ -17,7 +17,10 @@
     //print_r($arry1);
 
     foreach ($final_list as $value) {
-      echo "<li>$value</li>";
+     
+		$value = str_replace( ' ', '', $value);//use this line to remove the spaces on the text when the string is broken down at the comma level.
+
+      echo "<li>$value</li> \n"; //\n to add a breakline for each list item.
     }
 
     ?>
