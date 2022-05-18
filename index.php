@@ -1,25 +1,28 @@
 <!DOCTYPE html>
+
 <head>
 
 </head>
+
 <body>
 
-<h2>List</h2>
-<ul>
-<?php 
+  <h2>List</h2>
+  <ul>
+    <?php
 
-$list = "shoes, tie, shirt, belt, shorts, blouse";
+    $list = "shoes, tie,shirt, belt, shorts, blouse";
 
-$final_list =(explode(",",$list));
+    $final_list = (explode(",", $list));
 
-//print_r($arry1);
+    //print_r($arry1);
 
-foreach ($final_list as $value) {
-    echo "<li>$value</li>";
-  }
+    foreach ($final_list as $value) {
+      echo "<li>$value</li>";
+    }
 
-?>
+    ?>
 
-</ul>
+  </ul>
 </body>
+
 </html>
